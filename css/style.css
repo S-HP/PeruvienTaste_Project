@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-primary: #ffd351;
+  --text-font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--text-font-family);
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--bg-color-primary);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+}
+
+.header-brand {
+  display: flex;
+  gap: 10px;
+}
+
+.header-brand__logo {
+  color: var(--bg-color-primary);
+}
+
+.header-brand__title {
+  color: black;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.main-nav__list-link {
+}
