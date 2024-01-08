@@ -5,8 +5,9 @@
 :root {
   --bg-color-primary: #ffd351;
   --bg-color-hover: #ffbf00;
-
   --text-font-family: "Poppins", sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -95,9 +96,14 @@ main {
 }
 
 .container-section__Home {
-  padding-top: 19%;
+  inset: 0;
+  position: absolute;
+  padding: 0;
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 800px) {
