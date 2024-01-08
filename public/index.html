@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
     <link
       rel="shortcut icon"
-      href="../source/pizza-slice-solid.svg"
+      href="../source/icons/pizza-slice-solid.svg"
       type="image/x-icon"
     />
     <title>Peruvien Taste</title>
@@ -15,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome -->
@@ -37,16 +38,57 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-items">
-            <a href="#" class="main-nav__list-link">Inicio</a>
+            <a href="#Home" class="main-nav__list-link active">
+              <i class="fa-solid fa-home main-nav__list-icons"></i>
+              <span>Inicio</span></a
+            >
           </li>
           <li class="main-nav__list-items">
-            <a href="#" class="main-nav__list-link">Menus</a>
+            <a href="#Menu" class="main-nav__list-link">
+              <i class="fa-solid fa-utensils main-nav__list-icons"></i>
+              <span>Menus</span></a
+            >
           </li>
           <li class="main-nav__list-items">
-            <a href="#" class="main-nav__list-link">Alergias</a>
+            <a href="#" class="main-nav__list-link">
+              <i class="fa-solid fa-allergies main-nav__list-icons"></i>
+              <span>Alergias</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
+    <main class="content-main">
+      <section class="section-home section" id="Home">
+        <h1>.♥</h1>
+        <div class="container-section__Home">
+          <div class="container-illustration">
+            <img
+              src="../source/illustrations/undraw_people_re_8spw.svg"
+              alt="People"
+            />
+          </div>
+          <div class="container-description">
+            <p>
+              ¡Hola, Bienvenidos a Nuestra pagina! <br />
+              <strong>Peruvien Taste.</strong>
+            </p>
+            <button class="button-section__Home">
+              <a href="#Contac" class="button-link-section__Home"
+                >Contactanos</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-menu section" id="Menu">
+        <div class="container-descrition">
+          <h1 class="description-title">Menu</h1>
+          <p class="description-Paragraph">
+            <strong>¡Encuentra tus menus y más!</strong>
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

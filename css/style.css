@@ -4,12 +4,15 @@
 
 :root {
   --bg-color-primary: #ffd351;
+  --bg-color-hover: #ffbf00;
+
   --text-font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
   font-family: var(--text-font-family);
+  overflow: auto;
 }
 
 header {
@@ -23,11 +26,26 @@ header {
 
 .header-brand {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .header-brand__logo {
   color: var(--bg-color-primary);
+  animation: none;
+}
+
+.header-brand__logo:hover {
+  animation: shake 0.2s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-2px) translateY(-2px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(2px) translateY(2px) rotate(1deg);
+  }
 }
 
 .header-brand__title {
@@ -38,9 +56,126 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  font-weight: 400;
   list-style-type: none;
 }
 
 .main-nav__list-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: var(--bg-color-primary);
+}
+
+.main-nav__list-link:hover {
+  color: var(--bg-color-primary);
+}
+
+.main-nav__list-icons {
+  padding-right: 5px;
+}
+
+/* Main */
+
+main {
+  padding: 10px;
+}
+
+.section-home {
+  height: 100vh;
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  border: 5px dashed var(--bg-color-primary);
+}
+
+.container-section__Home {
+  padding-top: 19%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media only screen and (min-width: 800px) {
+  .container-section__Home {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    inset: 0;
+    gap: 100px;
+    flex-flow: row nowrap;
+  }
+}
+
+.container-illustration {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .container-illustration {
+    width: 60%;
+  }
+}
+
+.container-illustration img {
+  width: 50%;
+}
+
+.container-description {
+  text-align: center;
+}
+
+strong {
+  color: var(--bg-color-primary);
+}
+
+.button-section__Home {
+  border: none;
+  border-radius: 40px;
+  padding: 20px;
+  background-color: var(--bg-color-primary);
+}
+
+.button-section__Home:hover {
+  transform: scale(1.1);
+  background-color: var(--bg-color-hover);
+}
+
+.button-link-section__Home {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.section-menu {
+  margin-top: 10px;
+  border: 5px dashed var(--bg-color-primary);
+}
+
+.container-descrition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.description-Paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bg-color-hover);
 }
